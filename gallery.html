@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Mirissa Snorkeling Turtles</title>
+<meta name="description" content="Browse real photos from our turtle snorkeling, night snorkeling, diving, boat and fishing tours in Mirissa, Sri Lanka.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="img/Mirissa-Snorkeling-Turtles-Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html#home" class="brand">
+      <img src="img/Mirissa-Snorkeling-Turtles-Logo.png" alt="Mirissa Snorkeling Turtles logo">
+      <span class="brand-text">
+        <strong>Mirissa Snorkeling</strong>
+        <span>Turtles</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Tours</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="nav-whatsapp" href="https://wa.me/+94768502198?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.1.11-1.78-.11-.41-.13-.93-.3-1.6-.59-2.82-1.22-4.66-4.06-4.8-4.25-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.97.88 2.11.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.16-.29.36-.42.48-.14.14-.29.29-.12.57.16.28.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.61-.07.16-.19.7-.81.89-1.09.19-.28.38-.23.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.53.33.07.12.07.68-.17 1.35Z"/></svg>
+      </a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="page-header">
+  <div class="page-header-bg">
+    <img src="img/gallery_hero.jpg" alt="Mirissa Snorkeling Gallery Hero">
+  </div>
+  <div class="container">
+    <div class="eyebrow">Gallery</div>
+    <h1>Moments From the Water</h1>
+    <p>Real photos from our turtles, snorkeling, diving, boat and fishing tours around Mirissa — tap any photo to view it full-size.</p>
+    <div class="crumb"><a href="index.html">Home</a><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Gallery</span></div>
+  </div>
+  <div class="ocean-waves" aria-hidden="true">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax-waves">
+        <use href="#gentle-wave" x="48" y="0" class="wave-layer wave-1" />
+        <use href="#gentle-wave" x="48" y="3" class="wave-layer wave-2" />
+        <use href="#gentle-wave" x="48" y="5" class="wave-layer wave-3" />
+        <use href="#gentle-wave" x="48" y="7" class="wave-layer wave-4" />
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ GALLERY GRID ============ -->
+<section class="gallery section-pad">
+  <div class="container">
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">All Photos</button>
+      <button class="filter-btn" data-filter="turtles">Turtles</button>
+      <button class="filter-btn" data-filter="snorkeling">Snorkeling</button>
+      <button class="filter-btn" data-filter="diving">Diving</button>
+      <button class="filter-btn" data-filter="boat-fishing">Boat &amp; Fishing</button>
+      <button class="filter-btn" data-filter="team">Our Team</button>
+    </div>
+
+    <div class="gallery-grid-full" id="galleryGrid">
+      <div class="gallery-item reveal" data-category="turtles">
+        <img src="img/carousel-1.jpg" alt="Swim with wild turtles in Mirissa" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Swim With Wild Turtles</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="turtles">
+        <img src="img/Gallery-of-snorkeling-Tours-1.jpg" alt="Beautiful sea turtle close up" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Beautiful Sea Turtle</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="turtles">
+        <img src="img/Gallery-of-snorkeling-Tours-2.jpg" alt="Feeding turtles in Mirissa" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Feeding Time</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="turtles">
+        <img src="img/carousel-2.jpg" alt="Turtle resting among the coral reef" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Turtle Among the Reef</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="snorkeling">
+        <img src="img/service-1-Turtle-Snorkeling-Tours.jpg" alt="Turtle snorkeling tour in Mirissa" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Turtle Snorkeling Tour</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="snorkeling">
+        <img src="img/Gallery-of-snorkeling-Tours-3.jpg" alt="Guest hand-feeding a turtle while snorkeling" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Hand-Feeding a Turtle</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="snorkeling">
+        <img src="img/Gallery-of-snorkeling-Tours-4.jpg" alt="Snorkeler face to face with a turtle" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Face to Face</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="snorkeling">
+        <img src="img/service-2-Night-Snorkeling-Tours.jpg" alt="Night snorkeling tour silhouette" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Night Snorkeling</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="diving">
+        <img src="img/carousel-3.jpg" alt="Vivid coral reef with tropical fish" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Vivid Coral Reef</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="diving">
+        <img src="img/service-4-Deep-Diving.jpg" alt="Deep diving among coral formations in Mirissa" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Deep Diving the Reef</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="boat-fishing">
+        <img src="img/service-3-Boat-Tours.jpg" alt="Boat tour along the Mirissa coast" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Sunset Boat Tour</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="boat-fishing">
+        <img src="img/service-5-Deep-Fishing.jpg" alt="Deep sea fishing charter in Mirissa" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Deep Sea Fishing</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="boat-fishing">
+        <img src="img/service-6-Low-Deep-Fishing.jpg" alt="Low deep fishing coastal experience" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Low Deep Fishing</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="team">
+        <img src="img/about-1.jpg" alt="Our guide team in Mirissa" loading="lazy">
+        <div class="overlay"><span><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Meet Our Guides</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <img src="" alt="" id="lightboxImg">
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<!-- ============ CTA BANNER ============ -->
+<div class="cta-banner reveal">
+  <div>
+    <h2>Ready to Create Your Own Turtle Moment?</h2>
+    <p>Join a small-group tour and see these sights for yourself — spaces fill up fast in peak season.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="contact.html" class="btn btn-primary">Book Your Adventure</a>
+    <a href="https://wa.me/+94768502198?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Us</a>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" style="margin-top:110px">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html#home" class="brand">
+          <img src="img/Mirissa-Snorkeling-Turtles-Logo.png" alt="Mirissa Snorkeling Turtles logo">
+          <span class="brand-text">
+            <strong>Mirissa Snorkeling</strong>
+            <span>Turtles</span>
+          </span>
+        </a>
+        <p>Your gateway to the marine wonders of Mirissa — five years of small-group, eco-friendly turtle encounters on Sri Lanka's south coast.</p>
+        <div class="footer-social">
+          <a href="https://web.facebook.com/profile.php?id=61569906193063" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 22v-8h3l.5-3.5H13V8.3c0-1 .3-1.8 1.8-1.8H17V3.2C16.6 3.1 15.5 3 14.2 3 11.5 3 9.7 4.6 9.7 7.6v2.9H7V14h2.7v8Z"/></svg></a>
+          <a href="https://wa.me/+94768502198" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg></a>
+          <a href="https://www.tripadvisor.com/Attraction_Review-g1407334-d28508509-Reviews-Best_Of_Turtle_Snorkeling_Tours_Mirissa-Mirissa_Southern_Province.html" target="_blank" rel="noopener" aria-label="TripAdvisor"><svg viewBox="0 0 24 24"><path d="M12 6.6c-2.6-1.7-6.2-1.9-9.3-.4L1 6.9l1.2 1.3A5.4 5.4 0 0 0 1 11.7a5.3 5.3 0 0 0 9.6 3.1L12 16.6l1.4-1.8a5.3 5.3 0 0 0 9.6-3.1c0-1.4-.5-2.6-1.2-3.5L23 6.9l-1.7-.7c-3.1-1.5-6.7-1.3-9.3.4Zm-5.4 9a2.9 2.9 0 1 1 0-5.8 2.9 2.9 0 0 1 0 5.8Zm10.8 0a2.9 2.9 0 1 1 0-5.8 2.9 2.9 0 0 1 0 5.8Z"/></svg></a>
+          <a href="https://youtube.com/@tharushashamal-f5q" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 12s0-3.2-.4-4.7c-.2-.9-.9-1.6-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.5c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.7c.2.9.9 1.6 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.5c.9-.2 1.6-.9 1.8-1.8.4-1.5.4-4.7.4-4.7ZM10 15V9l5.2 3Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Tours</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Tours</h5>
+        <ul>
+          <li><a href="index.html#services">Turtle Snorkeling</a></li>
+          <li><a href="index.html#services">Night Snorkeling</a></li>
+          <li><a href="index.html#services">Boat Tours</a></li>
+          <li><a href="index.html#services">Deep Diving</a></li>
+          <li><a href="index.html#services">Deep Sea Fishing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="contact-line"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg><a href="https://maps.app.goo.gl/ZewMtkXMhw93Hzzp9" target="_blank" rel="noopener" style="color:inherit">Athkam Niwasa Road, Mirissa 81750, Sri Lanka</a></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg><span>+94 76 850 2198 / +94 76 420 1075</span></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg><span>tharushashml@gmail.com</span></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Mirissa Snorkeling Turtles. All rights reserved.</span>
+      <span>Designed by <a href="https://www.facebook.com/share/192YZzfC4R/?mibextid=wwXIfr" target="_blank" rel="noopener">WebMind Innovations</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ACTIONS ============ -->
+<a href="https://wa.me/+94768502198?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener" class="float-whatsapp" aria-label="Chat on WhatsApp">
+  <span class="wa-label">Chat &amp; Book on WhatsApp</span>
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.1.11-1.78-.11-.41-.13-.93-.3-1.6-.59-2.82-1.22-4.66-4.06-4.8-4.25-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.97.88 2.11.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.16-.29.36-.42.48-.14.14-.29.29-.12.57.16.28.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.61-.07.16-.19.7-.81.89-1.09.19-.28.38-.23.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.53.33.07.12.07.68-.17 1.35Z"/></svg>
+</a>
+<button class="back-top" id="backTop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg></button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

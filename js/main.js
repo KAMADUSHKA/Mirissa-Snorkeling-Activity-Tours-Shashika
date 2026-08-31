@@ -191,7 +191,7 @@
       statusBox.classList.remove('show');
 
       const lines = [
-        'Hello! I’d like to book a tour with Mirissa Snorkeling Turtles.',
+        'Hello! I’d like to book a tour with Mirissa Snorkeling Activities Tours.',
         '',
         `Name: ${fullName}`,
         `Tour: ${tour}`,
